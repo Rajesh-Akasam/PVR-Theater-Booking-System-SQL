@@ -20,6 +20,15 @@ This project is a SQL-based Theater Ticket Booking System developed using MySQL.
 - SQL
 - GitHub
 
+## Database Components
+
+- Tables
+- Primary Keys
+- Foreign Keys
+- Stored Procedures
+- ER Diagram
+
 ## Author
 
 Rajesh Akasam
+Aspiring Data Analyst
