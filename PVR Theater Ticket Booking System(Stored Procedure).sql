@@ -372,26 +372,6 @@ CALL Book_Ticket(1,"gold",820,@result_message,@booking_id);   -- Requesting More
 
 
 SELECT* FROM Bookings_Log;
--- {{
-select sum(quantity) as booked
-from bookings_log
-where Booking_Status = "booked";
-
-SELECT* FROM Ticket_Info;
-select sum(quantity) from bookings_log
- where booking_status = "cancelled";
- 
- select sum(quantity) from cancellation_history;
- 
- 
- select Theater_id,sum(quantity) from bookings_log
- where theater_id = 1;
- 
- 
- 
- select sum(balance_capacity) from ticket_info where theater_id = 1;
- 
- -- }}
 
 -- ================================================================================================================================== --
 -- {{                                        CREATING PROCEDURE TO CANCEL A BOOKING
