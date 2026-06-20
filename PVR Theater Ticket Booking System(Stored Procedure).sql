@@ -361,14 +361,14 @@ DELIMITER ;
 
 
 
--- CALL <procedure name> ( <Theater_ID> , <Ticket_Type> , <Quantity> , @Result_Message,@Booking_ID );
+-- CALL <procedure name> ( <Theater_ID> , <Ticket_Type> , <Quantity> , @booking_id,@result_message );
 
-CALL Book_Ticket(1,"gold",7,@result_message,@booking_id);    -- Successful Booking
-CALL Book_Ticket(123,"gold",80,@result_message,@booking_id);  -- InValid Theater_id
-CALL Book_Ticket(1,"3D",80,@result_message,@booking_id);      -- InValid Ticket Type
-CALL Book_Ticket(1,"recliner",0,@result_message,@booking_id);     -- 0 Quantity Request
-CALL Book_Ticket(1,"gold",-1,@result_message,@booking_id);    -- InValid Requested Quantity
-CALL Book_Ticket(1,"gold",820,@result_message,@booking_id);   -- Requesting More Than AVailable
+CALL Book_Ticket(1,"gold",7,@booking_id,@result_message);    -- Successful Booking
+CALL Book_Ticket(123,"gold",80,@booking_id,@result_message);  -- InValid Theater_id
+CALL Book_Ticket(1,"3D",80,@booking_id,@result_message);      -- InValid Ticket Type
+CALL Book_Ticket(1,"recliner",0,@booking_id,@result_message);     -- 0 Quantity Request
+CALL Book_Ticket(1,"gold",-1,@booking_id,@result_message);    -- InValid Requested Quantity
+CALL Book_Ticket(1,"gold",820,@booking_id,@result_message);   -- Requesting More Than AVailable
 
 
 SELECT* FROM Bookings_Log;
