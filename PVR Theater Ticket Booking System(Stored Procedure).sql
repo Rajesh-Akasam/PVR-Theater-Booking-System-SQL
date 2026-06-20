@@ -247,7 +247,7 @@ Proc_Main:
 
 BEGIN
 	DECLARE V_Theater_Exists  INT;
-	DECLARE V_Type            VARCHAR(45);
+	DECLARE V_Type            INT;
 	DECLARE V_Price           DECIMAL(12,2);
 	DECLARE V_AVailable_Seats INT;
 	DECLARE V_Amount          DECIMAL(14,2);
