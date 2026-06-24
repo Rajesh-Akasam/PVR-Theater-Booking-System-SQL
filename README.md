@@ -1,4 +1,4 @@
-# PVR Theater Booking System SQL Project
+# Theater Booking System SQL Project
 
 ## Project Overview
 
