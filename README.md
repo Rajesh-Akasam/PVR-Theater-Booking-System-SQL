@@ -1,4 +1,4 @@
-# Theater Booking System SQL Project
+# Theater Ticket Booking System SQL Project
 
 ## Project Overview
 
